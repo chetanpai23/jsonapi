@@ -1,0 +1,42 @@
+{
+    "configReport1": {
+        "tgwConfig": {
+            "items": [
+						{"name": "abc",
+						 "value": "123"
+						}
+					 ]
+        },
+        "swapConfig": {
+            "items": [
+						{"name": "abc",
+						 "value": "123"
+						}
+					 ]
+        },
+        "ttuConfig": {
+            "items": [
+						{"name": "abc",
+						 "value": "123"
+						}
+					 ]
+        }
+    },
+    ".metaData": {
+        "tgwConfig": {
+            "items": "SEQUENCE OF:>=1:<=1024 configItem"
+        },
+        "swapConfig": {
+            "items": "SEQUENCE OF:>=1:<=1024 configItem"
+        },
+        "ttuConfig": {
+            "items": "SEQUENCE OF:>=1:<=1024 configItem"
+        },
+        "ttuConfig.optional": true,
+     "configItem" :{
+      "name":"OCTET STRING:<=127",
+      "value":"OCTET STRING:<=255"
+   }
+    },
+    ".metaDataName": "2_3_ConfigReport1"
+}
